@@ -1,6 +1,6 @@
-In PyTum (original: Pu Tum) two people play against each other on a 7x7 game area. One player puts white stones, the other player puts black stones onto the area. Before the start, random fields are blocked by an odd value of stones. After that, the players alternate with their turns. The goal is to have as many stones as possible in a row. It does not matter if the rows are set vertically or horizontally and how many rows. Diagonal lines are not counted. All scored points of the respective lines are summed up. After every field is occupied, the player with higher points is the winner.
+In PahTum two player set stones on a 7x7 game area. One player puts white stones, the other player puts black stones onto the area. Before the start, random fields are blocked by an odd value of stones. After that, the players alternate with their turns. The goal is to have as many stones as possible in a row. It does not matter if the rows are set vertically or horizontally and how many rows. Diagonal lines are not counted. All scored points of the respective lines are summed up. After every field is occupied, the player with the higher scroe wins.
 
-How points are calculated:
+How the points are calculated:
 3 stones in a line: 3 points
 4 stones in a line: 10 points
 5 stones in a line: 25 points
@@ -17,3 +17,12 @@ q - quits whole program
 Only during the game:
 ** - set stone on the game area (first * for rows, second * for columns; *>=1, *<=7)
 u* - undo moves from the game (* is for the steps to undo; *>0)
+
+For the GUI, the following actions may help you:
+1. Choose a number of blocking fields in the dropdown menu
+2. Push the 'Block' button to block the fields
+3. set stones on the field alternately
+
+Additional:
+The score is shown in the upper right corner with the background color of each player. At the end of a game the pop up window shows which player wins. 
+
